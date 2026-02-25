@@ -1,0 +1,44 @@
+{
+  "name": "Onedrive",
+  "repo": "driveone/onedrive:latest",
+  "network": "bridge",
+  "custom_ip": "",
+  "default_shell": "sh",
+  "privileged": false,
+  "extra_parameters": "-it",
+  "post_parameters": "",
+  "web_ui_url": "",
+  "icon": "https://user-images.githubusercontent.com/29630035/64020891-0342f080-cb33-11e9-8a86-7a4baffcdf6d.png",
+  "paths": [
+    {
+      "name": "Configuration",
+      "mode": "rw",
+      "host": "/mnt/cache/appdata/yourapp",
+      "container": "/onedrive/conf/"
+    },
+    {
+      "name": "Data",
+      "mode": "rw",
+      "host": "/mnt/cache/appdata/yourapp",
+      "container": "/onedrive/data/"
+    }
+  ],
+  "ports": [],
+  "variables": [
+    {
+      "name": "UID",
+      "key": "ONEDRIVE_UID",
+      "value": "500",
+      "mask": false
+    },
+    {
+      "name": "GID",
+      "key": "ONEDRIVE_GID",
+      "value": "500",
+      "mask": false
+    }
+  ],
+  "devices": [],
+  "labels": [],
+  "gpus": []
+}
