@@ -10,7 +10,13 @@
   "web_ui_url": "",
   "icon": "https://raw.githubusercontent.com/erebus04/mos-hub-templates/main/images/onedrive.png",
   "project": "https://github.com/abraunegg/onedrive/blob/master/docs/Docker.md",
-  "description": "A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365 and SharePoint.",
+  "description": "A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365 and SharePoint. Installation: Before creating the Onedrive docker container, make sure you created a configuration and data folder first (see template).
+Install the Onedrive docker container using the template.
+Once installed, find the Conatiner ID. Stop the docker container.
+Open the MOS terminal and type: docker start your_container_ID --interactive.
+After entering the command and pressing enter, the container starts in interactive mode and a link to a Microsoft login page is shown in the terminal. You can open this link by clicking on it and log in with the Microsoft credentials of the Onedrive account you want to add. If successful, a blank page is shown. Copy the full address of this page and past it (right mouse and paste) in the terminal as the response URL and press enter. If the link is accepted, the client immediately starts downloading your files.
+You can close the terminal, restart the container normally and everything should be working from now on.
+For every Onedrive account you want to sync with MOS, you need to create a new docker container with a different folder for the configuration and data files.",
   "paths": [
     {
       "name": "Configuration",
