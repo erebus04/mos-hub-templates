@@ -10,7 +10,7 @@
   "web_ui_url": "",
   "project": "https://github.com/abraunegg/onedrive/blob/master/docs/Docker.md",
   "description": "A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365 and SharePoint.",
-  "icon": "https://github.com/erebus04/mos-hub-templates/blob/main/images/onedrive.png",
+  "icon": "https://raw.githubusercontent.com/erebus04/mos-hub-templates/blob/main/images/onedrive.png",
   "paths": [
     {
       "name": "Configuration",
